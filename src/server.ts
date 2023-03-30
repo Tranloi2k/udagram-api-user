@@ -18,7 +18,7 @@ import { V0MODELS } from './controllers/v0/model.index';
 
   //CORS Should be restricted
   app.use(function(req: any, res: { header: (arg0: string, arg1: string) => void; }, next: () => void) {
-    res.header("Access-Control-Allow-Origin", "http://localhost:8100");
+    res.header("Access-Control-Allow-Origin", "http://a523dd94f76ae40e2a4d1a4e365f88de-1721778524.us-east-1.elb.amazonaws.com");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
     next();
   });
