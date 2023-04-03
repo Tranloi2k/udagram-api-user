@@ -1,0 +1,21 @@
+version: '3'
+services:
+  reverseproxy:
+    image: proxy
+    ports:
+      - 8080:8080
+    restart: always
+    depends_on:
+      - backend-user
+      - backend-feed
+  backend-user:
+    image: api_user
+    environment:
+     
+      URL: 'http://localhost:8100'
+  backend-feed:
+    image: api-feed
+   
+    environment:
+      
+      URL: 'http://localhost:8100'
