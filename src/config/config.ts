@@ -1,17 +1,17 @@
 export const config = {
   "dev": {
-    "username": "postgres",
-    "password": "Tranloi1",
-    "database": "udagramdatabase",
-    "host": "udagramdatabase.csoas8gzch40.us-east-1.rds.amazonaws.com",
+    "username": process.env.POSTGRESS_USERNAME,
+    "password": process.env.POSTGRESS_PASSWORD,
+    "database": process.env.POSTGRESS_DATABASE,
+    "host": process.env.POSTGRESS_HOST,
     "dialect": "postgres",
-    "aws_region": "us-east-1",
-    "aws_profile": "default",
+    "aws_region": process.env.AWS_REGION,
+    "aws_profile": process.env.AWS_PROFILE,
     "aws_media_bucket": process.env.AWS_MEDIA_BUCKET,
     "url": process.env.FE_URL
   },
   "jwt": {
-    "secret": process.env.JWT_SECRET
+    "secret": " "
   },
   "prod": {
     "username": "",
