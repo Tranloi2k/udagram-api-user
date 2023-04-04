@@ -22,6 +22,7 @@ const c = config.dev;
   app.use(function(req: any, res: { header: (arg0: string, arg1: string) => void; }, next: () => void) {
     res.header("Access-Control-Allow-Origin", c.url);
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
+    res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,PUT,PATCH,POST,DELETE");
     next();
   });
 
