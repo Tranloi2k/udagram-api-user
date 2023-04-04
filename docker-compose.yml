@@ -9,7 +9,7 @@ services:
       - backend-user
       - backend-feed
   backend-user:
-    image: api_user
+    image: api-user
     environment:
      
       URL: 'http://localhost:8100'
@@ -19,3 +19,4 @@ services:
     environment:
       
       URL: 'http://localhost:8100'
+

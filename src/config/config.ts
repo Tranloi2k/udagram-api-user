@@ -11,7 +11,7 @@ export const config = {
     "url": process.env.FE_URL
   },
   "jwt": {
-    "secret": " "
+    "secret": process.env.JWT_SECRET
   },
   "prod": {
     "username": "",
